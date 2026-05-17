@@ -1,0 +1,34 @@
+{
+  "name": "typenode-petshop",
+  "version": "1.0.0",
+  "description": "Projeto em node/typescript de um PetShop fictício",
+  "homepage": "https://github.com/AnnaDornellas/typenode-PetShop#readme",
+  "bugs": {
+    "url": "https://github.com/AnnaDornellas/typenode-PetShop/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaDornellas/typenode-PetShop.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "start-dev": "nodemon --watch src --ext ts,json,mustache --exec ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mustache-express": "^1.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/mustache-express": "^1.2.5",
+    "@types/node": "^25.6.2",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
